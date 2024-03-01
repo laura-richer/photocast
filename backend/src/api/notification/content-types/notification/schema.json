@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notifications",
+  "info": {
+    "singularName": "notification",
+    "pluralName": "notifications",
+    "displayName": "Notification",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nickname": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "notificationFrequency": {
+      "type": "enumeration",
+      "enum": [
+        "daily",
+        "weekly"
+      ],
+      "default": "daily"
+    },
+    "locations": {
+      "type": "string",
+      "required": true
+    },
+    "weatherType": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
